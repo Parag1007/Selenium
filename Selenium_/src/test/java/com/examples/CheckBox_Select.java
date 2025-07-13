@@ -1,6 +1,7 @@
 package com.examples;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -18,7 +19,7 @@ public class CheckBox_Select extends BaseTest {
 	}
 
 	@Test
-	public void checkBox() throws InterruptedException {
+	public void checkBox() throws InterruptedException, IOException {
 		initilization();
 		driver.get("https://testautomationcentral.com/demo/checkboxes.html");
 		logger.info("Web Browser got opened...");

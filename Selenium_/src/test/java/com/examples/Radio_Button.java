@@ -1,6 +1,7 @@
 package com.examples;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -16,7 +17,7 @@ public class Radio_Button extends BaseTest {
 	}
 
 	@Test
-	public void select_Radio_Button()
+	public void select_Radio_Button() throws IOException
 
 	{
 		initilization();

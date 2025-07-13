@@ -1,6 +1,7 @@
 package com.examples;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -19,7 +20,7 @@ public class Dropdown_Select extends BaseTest {
 		super();
 	}
 	@Test
-	public void dropdowns() throws InterruptedException {
+	public void dropdowns() throws InterruptedException, IOException {
 		initilization();
 		driver.get("https://practice.expandtesting.com/dropdown");
 		logger.info("Broweser get opened..");

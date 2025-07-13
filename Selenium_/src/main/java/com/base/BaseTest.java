@@ -32,7 +32,7 @@ public class BaseTest {
 
 	}
 
-	public void initilization() {
+	public void initilization() throws IOException {
 
 		String browsername = prop.getProperty("browser");
 
@@ -55,6 +55,13 @@ public class BaseTest {
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 
+		fis.close();
+
+	}
+
+	public void teardown() {
+
+		driver.close();
 	}
 
 }
